@@ -42,7 +42,7 @@ public:
         }
     }
     void duplicates()
-    {
+    {// this function checks for duplicates in the hashtable
         for(int i = 0 ; i < Size ; i++)
         {
             for(auto j : hashtable[i])
