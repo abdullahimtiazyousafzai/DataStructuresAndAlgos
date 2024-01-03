@@ -37,7 +37,7 @@ public:
             delete head;
             head = nullptr;
             tail = nullptr;
-            cout << "Last element has been deleted!\n";
+            cout << "The only element present in the list has been deleted!\n";
         }
         else
         {
