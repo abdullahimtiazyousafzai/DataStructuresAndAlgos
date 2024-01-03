@@ -6,14 +6,14 @@ class Hashing{
 private:
     list <string>* hashtable;
     int Size;
-    int hash_function(string input)
+    int hash_function(string input)//this hashfunction returns the index of the value to be stored
     {
         int hash = 0;
 
         for(auto i : input)
         {
-            hash += static_cast<unsigned int>(i);
-        }
+            hash += static_cast<unsigned int>(i);//here typecasting is done to change the datatype
+        }                                        //of every character of a string to positive integer.
         hash = hash % Size;
 
         return hash;
