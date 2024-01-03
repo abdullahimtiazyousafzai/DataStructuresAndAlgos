@@ -21,7 +21,7 @@ public:
         if (a >= 0 && a < size && b >= 0 && b < size)
         {
             adjlist[a].push_back(b);
-            if (bi)
+            if (bi)// here bi means bidirectional, if it is true both will connect to each other, else only a will connect to b an not vice versa.
                 adjlist[b].push_back(a);
         }
         else
